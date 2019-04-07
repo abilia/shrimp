@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     renderGreeting();
                     return true;
                 case R.id.navigation_businesscard:
-                    // TODO
+                    // TODO implement business cards
                     return true;
             }
             return false;

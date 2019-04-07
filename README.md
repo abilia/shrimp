@@ -2,7 +2,7 @@
 This is a Android application.
 
 #### Prequisits and trouble shoot
-Target Android SDK is Oreo.
+Target API 26 Android 8.0 (Oreo)
 
 ## Task 1
 Solve at home. Make a pull request against this repo.
