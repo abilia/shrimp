@@ -17,22 +17,8 @@ The requirements are to print business cards for `persons`
 A business card should contain their full name, occupation and name of company.
 
 Add an view on navigation for `Task1` that should present
-```json
- [
-  {
-    "id": 2,
-    "name": "Severus Snape",
-    "occupation": "Teacher",
-    "company": "Abilia"
-  },
-  {
-    "id": 5,
-    "name": "Albus Dumbledore",
-    "occupation": "Principal",
-    "company": "Abilia"
-  }
-]
-```
+
+![Task1](/shrimp.png?raw=true "Task1")
 
 There are no restrictions in refactoring the current code, language selections or make further development. As long as it works and you can describe why you did your changes. But, it is only a task to start the discussions, so try not to overthink it.
 
