@@ -1,5 +1,5 @@
 # Shrimp
-This is a Android application.
+This is a Android (https://developer.android.com/) application.
 
 There are **no restrictions** in refactoring the current code, language selections or make further development.
 As long as it works and you can describe why you did your changes. But, it is only a task to start the discussions,
@@ -7,6 +7,12 @@ so try not to overthink it.
 
 #### Prequisits and trouble shoot
 Target API 26 Android 8.0 (Oreo)
+
+#### Start and run
+Install emulator (https://developer.android.com/studio/run/emulator) or connect an Android phone to the computer.
+Install a debug .apk with `gradlew installDebug`.
+
+Start the `shrimp` application to view a greeting
 
 ## Task 1
 Solve at home. Make a pull request against this repo.
