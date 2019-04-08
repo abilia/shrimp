@@ -48,6 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         Person person = greetingService.getGreetingPerson();
 
-        greeting.setText(person.getFullName());
+        greeting.setText(String.format("Hello says %s", person.getFullName()));
     }
 }
