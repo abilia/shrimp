@@ -1,1 +1,22 @@
-[{"person_id":2,"company_id":1,"occupation":"Teacher"},{"person_id":3,"company_id":1,"occupation":"Student"},{"person_id":4,"company_id":2,"occupation":"Teacher"},{"person_id":5,"company_id":1,"occupation":"Principal"}]
+[
+    {
+        "person_id": 2,
+        "company_id": 1,
+        "occupation": "Teacher"
+    },
+    {
+        "person_id": 3,
+        "company_id": 1,
+        "occupation": "Student"
+    },
+    {
+        "person_id": 4,
+        "company_id": 2,
+        "occupation": "Teacher"
+    },
+    {
+        "person_id": 5,
+        "company_id": 1,
+        "occupation": "Principal"
+    }
+]

@@ -1,1 +1,12 @@
-[{"id":1,"name":"Abilia","city":"Gothenburg"},{"id":2,"name":"Abilia","city":"Stockholm"}]
+[
+    {
+        "id": 1,
+        "name": "Abilia",
+        "city": "Gothenburg"
+    },
+    {
+        "id": 2,
+        "name": "Abilia",
+        "city": "Stockholm"
+    }
+]
