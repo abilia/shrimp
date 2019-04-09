@@ -7,7 +7,11 @@ import java.net.URL
 
 class Connection {
 
-    val storage = "http://www.my-abilia.se/shrimp/"
+    private val storage = "http://www.my-abilia.se/shrimp/"
+    private var persons = mutableListOf<Person>()
+    private var companies = mutableListOf<Company>()
+    private var occupations = mutableListOf<Occupation>()
+    private val objectMapper = jacksonObjectMapper()
 
     enum class JSON(val filename: String) {
         persons("persons"),
@@ -15,24 +19,29 @@ class Connection {
         occupations("occupations")
     }
 
-    val objectMapper = jacksonObjectMapper()
-
-    fun getPersons(): List<Person> {
-        val data = readUrl(JSON.persons)
-        return objectMapper.readValue(data)
+    fun getPersons(forceReload: Boolean = false): List<Person> {
+        if (persons.isEmpty() || forceReload) {
+            val data = readUrl(JSON.persons)
+            persons = objectMapper.readValue(data)
+        }
+        return persons
     }
 
-    fun getCompanies(): List<Company> {
-        val data = readUrl(JSON.companies)
-        return objectMapper.readValue(data)
+    fun getCompanies(forceReload: Boolean = false): List<Company> {
+        if (companies.isEmpty() || forceReload) {
+            val data = readUrl(JSON.companies)
+            companies = objectMapper.readValue(data)
+        }
+        return companies
     }
 
-    fun getOccupations(): List<Occupations> {
-        val data = readUrl(JSON.occupations)
-        return objectMapper.readValue(data)
+    fun getOccupations(forceReload: Boolean = false): List<Occupation> {
+        if (occupations.isEmpty() || forceReload) {
+            val data = readUrl(JSON.occupations)
+            occupations = objectMapper.readValue(data)
+        }
+        return occupations
     }
 
-    fun readUrl(url: JSON): ByteArray  {
-        return URL(storage + url + ".json").readBytes()
-    }
+    private fun readUrl(url: JSON): ByteArray = URL("$storage$url.json").readBytes()
 }

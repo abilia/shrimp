@@ -13,8 +13,14 @@ data class Company (
         val city: String
 )
 
-data class Occupations (
-        @get:JsonProperty("person_id") val person : Int,
-        @get:JsonProperty("company_id") val company : Int,
+data class Occupation (
+        @get:JsonProperty("person_id") val personId : Int,
+        @get:JsonProperty("company_id") val companyId : Int,
         val occupation : String
+)
+
+data class ExtendedPerson (
+        val person: Person,
+        val company: Company,
+        val occupation: Occupation
 )
